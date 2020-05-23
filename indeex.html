@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>module2-solution</title>
+</head>
+<style >
+	/*basic style*/
+	* {
+		box-sizing: border-box;
+	}
+	body {
+		background-color: black;
+	}
+	h1 {
+		margin: 100px;
+		text-align: center;
+		font-family: arial;
+		font-weight: bold;
+		font-size: 175%;
+	}
+	section {
+		position: relative;
+		padding: 15px;
+		width: 95%;
+	}
+	p {
+		position: relative;
+		clear: right;
+	}
+	div {
+		position: relative;
+		background-color: green;
+		border: 1px yellow;
+		width: 95%;
+		margin-left: auto;
+		margin-right: auto;
+		margin-bottom: auto;
+	}
+	.sub1 {
+		float: right;
+		width: 100px;
+		padding: 5px;
+		margin: 0px;
+		border: 1px yellow;
+		text-align: center;
+		font-size: 125%;
+		font-weight: bold;
+		background-color: black;
+		
+	}
+	.sub2 {
+		float: right;
+		color: black;
+		width: 95px;
+		padding: 5px;
+		margin: 0px;
+		border: 1px yellow;
+		text-align: center;
+		font-size: 125%;
+		font-weight: bold;
+		background-color: green;
+		
+	}
+	.sub3 {
+		color: red;
+		float: right;
+		width: 95px;
+		padding: 5px;
+		margin: 0px;
+		border: 1px yellow;
+		text-align: center;
+		font-size: 125%;
+		font-weight: bold;
+		background-color:orange;
+		
+	}
+	.content {
+		padding: 5px;
+		border: none;
+		background-color: green;
+		font-family: arial;
+		color: red;
+		margin: 0px;
+		height: 200px;
+		overflow: auto;
+	}
+	
+	.row {
+		width: 90%;
+	}
+	
+	/*desktop version*/
+	@media (min-width: 992px){
+		.column-lg-4 {
+			float: left;
+			width: 33.33%;
+		}
+	}
+	/*tablet version*/
+	@media (min-width: 768px) and (max-width: 991px){
+		.colmn-md-6 {
+			float: left;
+			width: 50%;
+			margin-left: auto;
+			margin-right: auto;
+		}
+		.colmn-md-12 {
+			float: left;
+			width: 100%;
+			margin-left: auto;
+			margin-right: auto;
+		}
+	}
+	/*mobile version*/
+	@media (max-width: 767px){
+		.colmn-sm-12 {
+			float: left;
+			width: 100%;
+		}
+	}
+</style>
+<body >
+<h1>my page</h1>
+	<section class="column-lg-4 colmn-md-6 colmn-sm-12">
+		<div>
+			<p class="sub1">Section</p>
+			<p class="content">Human values convey a positive and affective surge, which reinforces the rationale of moral values. They are thevalues that permit us to live together in harmony, and personnally contribute to peace.
+
+</p>
+		</div>
+	</section>
+	<section class="column-lg-4 colmn-md-6 colmn-sm-12">
+		<div>
+			<p class="sub2">Layout</p>
+			<p class="content">he practice of agriculture is also known as "farming", while scientists, inventors and others devoted to improving farming methods and implements are also said to be engaged in agriculture.
+
+Subsistence farming, who farms a small area with limited resource inputs, and produces only enough food to meet the needs of his/her family.
+
+At the other end is commercial intensive agriculture, including industrial agriculture.
+
+Such farming involves large fields and/or numbers of animals, large resource inputs (pesticides, fertilizers, etc.), and a high level of mechanization.
+
+These operations generally attempt to maximize financial income from grain,</p>
+		</div>
+	</section>
+	<section class="column-lg-4 colmn-md-12 colmn-sm-12">
+	<div>
+		<p class="sub3">Spacing</p>
+			<p class="content">The World Wide Web Consortium (W3C) is an international community where Member organizations, a full-time staff, and the public work together to develop Web standards. Led by Web inventor and Director Tim Berners-Lee and CEO Jeffrey Jaffe, W3C's mission is to lead the Web to its full potential.
+</p>
+	</div>
+</body>
+</html>
